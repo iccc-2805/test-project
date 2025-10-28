@@ -1,0 +1,187 @@
+﻿body {
+}
+#iHoten:focus{
+    background-color:aquamarine;
+    border-radius:10px;
+    border:5px double red;
+}
+.td1{
+    color:red;
+    text-align:center;
+}
+
+#td1b{
+    color:blue;
+}
+
+div .p1{
+    color:deeppink;
+}
+
+
+
+ul>li{
+    font-style:italic;
+    color:red;
+}
+p+h3{
+    color:red;
+}
+.td1:hover{
+    color:blue;
+    background-color:aqua;
+    box-shadow:10px 25px yellow;
+}
+
+.td1:active{
+    color:deeppink;
+}
+
+.tbl1 tr>th{
+    background-color:green;
+}
+
+.tbl1 tr:nth-child(2n+1){
+    background-color:aquamarine;
+}
+
+.tbl1 tr:nth-child(2n){
+    background-color:lightgreen;
+}
+
+.tbl1 tr:hover{
+    background-color:dodgerblue;
+}
+.tbl1 tr:last-child{
+    background-color:sandybrown;
+}
+
+input:checked+lable{
+    color:blue;
+    font-weight:bold;
+
+}
+
+input:required{
+    background-color:red;
+}
+
+input:valid{
+    color:forestgreen!important;
+}
+
+input:invalid{
+    color:red;
+}
+
+input:in-range{
+    color:aqua;
+}
+
+input:disabled{
+    background-color:aqua;
+    color:dimgray;
+}
+
+.nav{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
+}
+.logo{
+    
+    width:5%;
+}
+#fm-brand {
+    width: 15%; 
+}
+
+.nav-bar-menu {
+    width: 60%;
+}
+
+.nav-bar-right {
+    padding-top: 25px;
+    width: 20%;
+}
+
+.fa-phone-volume, .fa-location-dot{
+        color:blue;
+}
+
+.fm-menu{
+    text-decoration:none;
+    padding:10px;
+    background-color:aquamarine;
+    margin:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:16px;
+    color:black;
+}
+
+.nav-bar-menu{
+    justify-content:center;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.nav-bar-menu-level2-item{
+    display:none;
+    position:absolute;
+    margin-top:5px;
+}
+.nav-bar-menu-level2:hover .nav-bar-menu-level2-item{
+    display:block;
+}
+
+.fm-menu-item {
+    text-decoration: none;
+    padding: 10px;
+    background-color: hotpink;
+    margin: 15px;
+}
+
+#btnLink3{
+    outline:none;
+    border:none;
+}
+
+.fm-menu:hover{
+    box-shadow:10px 5px yellow;
+    text-decoration:underline;
+    border-radius:10px;
+}
+
+.asimovian-regular{
+    font-family:"asinovian",sans-serif;
+    font-weight:400;
+    font-style:normal;
+}
+
+ol>li::before{
+    content:'\2764';
+    color:red;
+}
+
+ol > li::after{
+    content:'Done';
+    color:green;
+}
+
+::selection{
+    background-color:yellow;
+}
+.fm-pa::first-line {
+    color: red;
+}
+
+.fm-pa::first-letter{
+    font-size:2em;
+    font-weight:bold;
+    color:forestgreen;
+}

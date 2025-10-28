@@ -1,0 +1,196 @@
+﻿
+@{
+    ViewBag.Title = "Sanpham";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+<style>
+    #fm-tbl1 {
+        border-collapse: collapse;
+    }
+
+    .fm-align-text {
+        text-align: center;
+    }
+
+    #fm-tbl2 {
+        border-style: groove;
+        border-width: 5px;
+        border-color: yellow;
+    }
+</style>
+<form id="frm-Register" action="#" method="post">
+    <lable for="hoten">Nhập họ tên: </lable>
+    <input type="text" id="hoten" name="hoten" placeholder="vui lòng nhập họ tên..." required/>
+    <br />
+    <label for="pass">Nhập mật khẩu: </label>
+    <input type="password" name="pass" id="pass" required />
+    <br />
+    <label for="tuoi">Nhập tuổi</label>
+    <input type="number" id="tuoi" name="tuoi" />
+    <br />
+    <label for="email">nhập Email: </label>
+    <input type="email" id="email" name="email" required />
+    <br />
+    <label for="ngaythang">Chọn ngày sinh</label>
+    <input type="date" name="ngaythang" id="ngaythang" />
+    <br />
+
+    <label for="dulieu">Chọn tệp</label>
+    <input type="file" name="dulieu" id="dulieu" />
+    <br />
+
+    <label for="sothich">Chọn sở thích: </label>
+    <input type="checkbox" name="sothich" value="Boiloi" />Bơi lội
+    <input type="checkbox" name="sothich" value="Docsach" />Đọc Sách
+    <input type="checkbox" name="sothich" value="Xemphim" />Xem phim
+    <br />
+
+    <label for="gioitinh">Chọn giới tính:</label>
+    <input type="radio" name="gioitinh" value="nam" />Nam
+    <input type="radio" name="gioitinh" value="nu" />Nữ
+    <br />
+    <textarea cols="20" rows="10" readonly>Bảng nội quy</textarea>
+    <br />
+    <label for="diachi">chọn địa chỉ: </label>
+    <select name="diachi" multiple>
+        <option>Quận 10</option>
+        <option>Quận 1</option>
+        <option>Quận 7</option>
+        <option>Quận 10</option>
+        <option>Quận 1</option>
+        <option>Quận 7</option>
+    </select>
+    <br />
+    <label for="phuong">
+        <select name="phuong">
+            <optgroup label="Quận 10">
+                <option>Phường Hòa Hưng</option>
+                <option selected>Phường Diên Hồng</option>
+                <option>Phường 1</option>
+            </optgroup>
+            <optgroup label="Quận 3">
+                <option>Phường 1</option>
+                <option>Phường 2</option>
+                <option>Phường 3</option>
+            </optgroup>
+        </select>
+    </label>
+    <br />
+    <input type="search" />
+    <input type="reset" value="Xóa nội dung" />
+    <input type="button" value="Button" />
+    <input type="submit" value="Gửi"/>
+    <br />
+</form>
+<h2>Bảng sản phẩm</h2>
+<audio src="~/audio1.mp3" controls></audio>
+<audio controls>
+    <source src="~/audio1.mp3" />
+</audio>
+<video src="~/video/293788_tiny.mp4" width="300" height="300" controls poster="/Hinh/tải xuống.jpg"></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q_oBBxPADd8?si=7GGGexVONBcQulLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q_oBBxPADd8?si=7GGGexVONBcQulLp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<table border="1">
+    <thead>
+    <th>STT</th>
+    <th>Tên sản phẩm</th>
+    <th>Số lượng</th>
+    <th>Đơn giá</th>
+    <th>Thành tiền</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="fm-align-text">01</td>
+            <td class="fm-align-text">Bút viết</td>
+            <td class="fm-align-text">100</td>
+            <td class="fm-align-text">2000</td>
+            <td class="fm-align-text">200.000 VNĐ</td>
+        </tr>
+        <tr>
+            <td class="fm-align-text">01</td>
+            <td class="fm-align-text">Bút viết</td>
+            <td class="fm-align-text">100</td>
+            <td class="fm-align-text">2000</td>
+            <td class="fm-align-text">200.000 VNĐ</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr style="background-color:pink">
+            <td colspan="2">Tổng</td>
+            <td style="text-align:center;font-weight:bold">160</td>
+            <td colspan="2" style="text-align:right"><b>2.000.000</b></td>
+        </tr>
+    </tfoot>
+</table>
+<table border="1" id="fm-tbl1" cellpadding="10">
+    <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>Thành tiền</th>
+    </tr>
+    <tr>
+        <td class="fm-align-text">01</td>
+        <td class="fm-align-text">Bút viết</td>
+        <td class="fm-align-text">100</td>
+        <td class="fm-align-text">2000</td>
+        <td class="fm-align-text">200.000 VNĐ</td>
+    </tr>
+    <tr>
+        <td class="fm-align-text">02</td>
+        <td class="fm-align-text">Sách</td>
+        <td class="fm-align-text">50</td>
+        <td class="fm-align-text">20.000</td>
+        <td class="fm-align-text">1.000.000 VNĐ</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>cặp</td>
+        <td>10</td>
+        <td>250.000</td>
+        <td>2.500.000 VNĐ</td>
+    </tr>
+    <tr style="background-color:pink">
+        <td colspan="2">Tổng</td>
+        <td style="text-align:center;font-weight:bold">160</td>
+        <td colspan="2" style="text-align:right"><b>2.000.000</b></td>
+    </tr>
+</table>
+
+<table border="1" id="fm-tbl2">
+    <colgroup>
+        <col style="background-color:red" />
+        @* <col style="background-color: greenyellow" />*@
+        <col span="2" style="background-color:cyan" />
+    </colgroup>
+    @*01*@
+    <tr>
+        <th>Tên môn học</th>
+        <th>sinh viên</th>
+        <th>Mã sv</th>
+    </tr>
+    @*02*@
+    <tr>
+        <td rowspan="2">HTML</td>
+        <td>Nguyễn Văn A</td>
+        <td>24DH112345</td>
+    </tr>
+    @*03*@
+    <tr>
+        <td>Nguyễn Thị E</td>
+        <td>24DH110230</td>
+    </tr>
+    @*04*@
+    <tr>
+        <td rowspan="2">Nhập môn lập trình</td>
+        <td>Lý thị D</td>
+        <td>24DH7788</td>
+    </tr>
+    @*05*@
+    <tr>
+        <td>Trần Thành Danh</td>
+        <td>24DH110203</td>
+    </tr>
+</table>
+

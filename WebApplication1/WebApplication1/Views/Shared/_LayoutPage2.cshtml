@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="cà phê hạt, cà phê rang" />
+    <meta name="description" content="Cty ABC chuyên cung cấp cà phê hạt chất lượng" />
+    <title>@ViewBag.Title</title>
+    <style>
+        #top{
+            width:100%;
+            height: 230px;
+            
+        }
+        #content{
+            width: 100%;
+            height:1100px;
+            
+        }
+        #footer {
+            text-align:center;
+            padding: 45px;
+            clear:both;
+            width: 100%;
+            height: 100px;
+            background-color: #4cff00;
+        }
+        #fm-menu li{
+            list-style-type:none;
+            display:inline-block;
+            background-color:chartreuse;
+            padding:20px;
+            border-radius: 10px 20px;
+        }
+        #fm-banner{
+            width:100%;
+            height:150px;
+        }
+        #icon-img{
+            width:50px;
+            height:50px;
+            bottom:100px;
+            right:100px;
+            position:fixed;
+        }
+        #left-side {
+            float:left;
+            width: 20%;
+            height: 1100px;
+            background-color: crimson;
+        }
+        #right-side {
+            float:right;
+            width: 80%;
+            height: 1100px;
+            background-color: aqua;
+        }
+        #fm-menu a
+        {
+            text-decoration:none;
+            color:white;
+        }
+      
+
+        #fm-menu-left li{
+            list-style-type: none;
+            margin-bottom:20px;
+            margin-right:20px;
+            background-color:chartreuse;
+            padding: 20px;
+            border-radius: 10px 20px;
+        }
+
+       
+        #fm-item-left-menu{
+            display:block;
+            padding:20px;
+            background-color:aquamarine;
+            margin-bottom:10px;
+            width:80px;
+            border-radius:10px;
+            margin-left:20px;
+            margin-top:20px ;
+        }
+        #fm-item-left-menu{
+            text-decoration:none;
+        }
+/*        #left-side{
+            margin-left:10px;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div id="menu">
+            <ol id="fm-menu">
+                <li><a href="/TrangChu/Index">Trang chủ</a></li>
+                <li><a href="/TrangChu/Sanpham">Sản phẩm</a></li>
+                <li><a href="/TrangChu/Gioithieu">Giới thiệu</a></li>
+                
+            </ol>
+        </div>
+        <div id="banner">
+            
+            <img src="~/Hinh/tải xuống (1).jpg" id="fm-banner" alt="đây là banner cty ABC" title="CTY ABC chuyên cung cấp cà phê" />
+        </div>
+        
+    </div>
+    <div id="content">
+        <div id="left-side">
+            <a href="/TrangChu/Index" id="fm-item-left-menu">Trang chủ</a>
+            <hr size="5" style="border-color:white;background-color:yellow" />
+            <a href="/TrangChu/Sanpham" id="fm-item-left-menu">Sản phẩm</a>
+            <hr size="5" style="border-color:white;background-color:yellow" />
+            <a href="/TrangChu/Gioithieu" id="fm-item-left-menu">Giới thiệu</a>
+            <hr size="5" style="border-color:white;background-color:yellow" />
+        </div>
+        <div id="right-side">
+            @RenderBody()
+        </div>
+
+        <a href="#top">
+            <img src="~/Hinh/tải xuống.jpg" id="icon-img" />
+        </a>
+    </div>
+    <div id="footer">
+        Công ty ABC chuyên cung cấp cà phê hạt tại Việt Nam
+    </div>
+</body>
+</html>

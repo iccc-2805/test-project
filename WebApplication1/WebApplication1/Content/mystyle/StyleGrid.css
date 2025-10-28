@@ -1,0 +1,202 @@
+﻿body {
+}
+.grid-container{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-gap:10px;
+}
+.top-container{
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items:center;
+    justify-content:space-between;
+}
+.font-brand {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    grid-gap:5px;
+    height:auto;
+    position:relative;
+}
+.menu a{
+    margin:10px;
+    padding:10px;
+    background-color:#4cff00;
+    text-decoration:none;
+}
+.right-contact{
+    text-align:right;
+}
+.center-container{
+    display:grid;
+    grid-template-columns: 200px auto;
+    column-gap:10px;
+
+}
+.left-side a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    margin-bottom:10px;
+    background-color:#00ffff;
+    padding:10px;
+}
+.fm-img{
+    width:150px;
+    height:150px;
+}
+.list-product{
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:repeat(3,1fr);
+}
+.box-pro{
+    background-color:#f9efef;
+    text-align:center;
+    padding-top:5px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content:center;
+    align-items:center;
+    background-color:aquamarine;
+}
+.slide-show{
+    display:flex;
+    flex-direction:row;
+    width:1200px;
+    animation:moving-show 2s linear infinite;
+    position:relative;
+}
+@keyframes moving-show {
+    0% {
+        transform:translateX(0)
+    }
+    100%{
+        transform:translateX(100px)
+    }
+}
+@keyframes zooming-img{
+    0%{
+        transform:scale(1)
+    }
+    100%{
+        transform:scale(1.5)
+    }
+}
+.slide-show img:hover{
+    animation:zooming-img 2s ease infinite;
+}
+@keyframes rotate-item{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(15deg)
+    }
+}
+.left-side a:hover{
+    animation:rotate-item 2s ease infinite, change-color 2s ease-in infinite;
+}
+@keyframes change-color{
+    0%{background-color:aqua}
+    50%{background-color:dodgerblue}
+    80%{background-color:darkblue}
+    100%{
+        background-color:aqua
+    }
+}
+
+@keyframes opacing-item{
+    0%{opacity:1}
+    50%{opacity:0.5}
+    100%{opacity:0}
+}
+
+@media(max-width:768px){
+    body{
+        background-color:pink;
+    }
+}
+/*mahinh<=476 => danh sách sản phẩm hiển thị 1 cột*/
+@media(max-width:476px){
+    .list-product{
+        grid-template-columns:auto;
+    }
+    .footer-container {
+        grid-template-columns: auto;
+    }
+    .center-container {
+        grid-template-columns: auto;
+    }
+    .slide-show{
+        display:none;
+    }
+    .banner{
+        display:none;
+    }
+    .top-container {
+        grid-template-columns: auto;
+        grid-gap:10px;
+    }
+}
+
+/*477<manhinh<=768 => ds sản phẩm 2 cột*/
+@media(min-width:477px) and (max-width:768px){
+    .list-product{
+        grid-template-columns:auto auto;
+    }
+    .footer-container {
+        grid-template-columns: auto;
+    }
+    .center-container {
+        grid-template-columns: auto;
+    }
+}
+
+/*769<manhinh<=976 => ds sản phẩm 3 cột*/
+@media(min-width:769px) and (max-width:976px){
+    .list-product{
+        grid-template-columns:auto auto auto;
+    }
+    .footer-container {
+        grid-template-columns: auto auto;
+    }
+    .center-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+/*977<manhinh<=1200 => danh sach san pham 4 cot*/
+@media(min-width:977px) and (max-width:1200px){
+        .list-product{
+            grid-template-columns:auto auto auto auto;
+        }
+    .footer-container {
+        grid-template-columns: auto auto auto;
+    }
+    .center-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+/*manhinh>1200 => ds sản phẩm 5 cột*/
+@media (min-width:1200px){
+    .list-product {
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .footer-container {
+        grid-template-columns: auto auto auto;
+    }
+    .center-container {
+        grid-template-columns: auto auto;
+    }
+}

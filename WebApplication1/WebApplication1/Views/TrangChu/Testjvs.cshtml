@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Testjvs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/MyScript/Script1.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        //**getElementById()
+        document.getElementById('p1').textContent = 'xin chào p1';// dùng khi chỉ muốn thay đổi văn bản thuần
+        document.getElementById('p2').innerHTML = 'xin chào p1 <b>người dùng</b>';// dùng khi có thêm thẻ html bên trong nội dung
+        document.getElementById('p3').innerText = 'xin chào p1';
+        document.getElementById('idImg1').src = '/Hinh/cute1.png';
+        document.querySelector('#idImg2').src = ' /Hinh/cute2.png';
+       
+    });
+    //Theo mặc định, trình duyệt (Browser) đọc và thực thi mã HTML từ trên xuống dưới.
+    // hàm này có tác dụng đừng cho jvs chạy vội , đợi khi toàn bộ cấu trúc DOM (các ptu trong html) chạy xong rồi mới chạy jvs
+
+
+</script>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<img id="idImg1" />
+<img id="idImg2" />
+
+

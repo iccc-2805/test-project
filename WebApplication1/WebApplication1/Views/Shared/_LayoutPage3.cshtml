@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/mystyle/style1.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/brands.min.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="~/Hinh/tải xuống.jpg" width="50" height="50" />
+
+        </div>
+        <div id="fm-brand"><h2 class="asimovian-regular">GREEN FOODS</h2></div>
+        <div class="nav-bar-menu">
+            <a href="#" class="fm-menu">link 1</a>
+            <a href="#" class="fm-menu">link 2</a>
+            <div class="nav-bar-menu-level2">
+                <button class="fm-menu" id="btnLink3">Link 3</button>
+                <div class="nav-bar-menu-level2-item">
+                    <a href="#" class="fm-menu-item">Link 3.1</a>
+                    <a href="#" class="fm-menu-item">Link 3.2</a>
+                    <a href="#" class="fm-menu-item">Link 3.3</a>
+                    <a href="#" class="fm-menu-item">Link 3.4</a>
+                </div>
+            </div>
+
+            <a href="#" class="fm-menu">link 4</a>
+            <a href="#" class="fm-menu">link 5</a>
+        </div>
+        <div class="nav-bar-right">
+            <i class="fa-solid fa-phone-volume"></i>1234
+            <i class="fa-solid fa-location-dot"></i>828,sư vạn hạnh q10
+        </div>
+    </div>
+    
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
