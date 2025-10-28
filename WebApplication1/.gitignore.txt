@@ -1,0 +1,23 @@
+# Bỏ qua thư mục .vs (Cấu hình cục bộ của Visual Studio)
+.vs/
+
+# Bỏ qua các thư mục chứa kết quả biên dịch
+[Bb]in/
+[Oo]bj/
+
+# Bỏ qua thư mục packages (nếu bạn sử dụng gói NuGet cục bộ)
+packages/
+
+# Các file cấu hình giải pháp và người dùng
+*.user
+*.suo
+*.sln.docstates
+
+# File đã biên dịch
+*.exe
+*.dll
+
+# Các file tạm thời hoặc file log
+*testresults.trx
+*.pdb
+*.log
